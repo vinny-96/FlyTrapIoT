@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F9F5"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/txtTituloFormulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar trampa"
+            android:textColor="#1B4332"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Completa los datos de la trampa agrícola."
+            android:textColor="#52645A"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etCodigoSector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Código del sector"
+            android:inputType="textCapCharacters"
+            android:singleLine="true"
+            android:textColor="#1F2937"
+            android:textColorHint="#52645A" />
+
+        <EditText
+            android:id="@+id/etTipoTrampa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Tipo de trampa"
+            android:inputType="textCapSentences"
+            android:singleLine="true"
+            android:textColor="#1F2937"
+            android:textColorHint="#52645A" />
+
+        <EditText
+            android:id="@+id/etNivelCaptura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Nivel de captura"
+            android:inputType="number"
+            android:singleLine="true"
+            android:textColor="#1F2937"
+            android:textColorHint="#52645A" />
+
+        <EditText
+            android:id="@+id/etObservaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="top"
+            android:hint="Observaciones (opcional)"
+            android:inputType="textCapSentences|textMultiLine"
+            android:minLines="3"
+            android:textColor="#1F2937"
+            android:textColorHint="#52645A" />
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#2D6A4F"
+            android:text="Guardar trampa"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#B23A35"
+            android:text="Eliminar trampa"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Volver"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>

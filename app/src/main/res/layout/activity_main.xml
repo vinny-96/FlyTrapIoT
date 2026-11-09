@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#F7F9F5">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FlyTrap IoT"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1B4332" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Gestión de trampas agrícolas"
+        android:textSize="16sp"
+        android:textColor="#52645A" />
+
+    <Button
+        android:id="@+id/btnAgregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Registrar trampa"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2D6A4F" />
+
+    <TextView
+        android:id="@+id/textoTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Trampas registradas: 0"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#1B4332" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listaTrampas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#DCE5E0"
+            android:dividerHeight="1dp" />
+
+        <TextView
+            android:id="@+id/textoVacio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="Todavía no hay trampas registradas."
+            android:textSize="16sp"
+            android:textColor="#52645A" />
+
+    </FrameLayout>
+
+</LinearLayout>
